@@ -14,9 +14,24 @@
         });
        
  </script>
+<script>
+
+        $(document).ready(function () {
+       var videoPath;
+        $(".video-play-btn2").click(function () {
+         videoPath = $(this).data("src");
+        });
+        $("#myModal2").on("shown.bs.modal", function (e) {
+         $("#video2").attr("src", videoPath);
+        });
+        $("#myModal2").on("hide.bs.modal", function (e) {
+         $("#video2").attr("src", "");
+        });
+        });
+       
+ </script>
 <div class="row g-5 mb-5">
     <div>
-
         {% if page.title == "Home" %}
         <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
          <!-- Home page -->
@@ -85,17 +100,28 @@
                 <img src="{{ site.github.url }}/assets/img/cover.jpg" width="30%">
               </div>mt-3
               <div class="col-md-auto"><h4>Injection continuous liquid interface production of 3D objects</h4></div> -->
-              <div class="col-sm-4">
+              <div class="col-sm-3">
                 <div class="hover_img">
-                       <img src="assets/img/paraflow.png" style='width:100%' class="video-play-btn" data-toggle="modal" data-src="assets/img/VIDEO-2023-08-13-10-04-37.mp4" data-target="#myModal">
+                       <img src="assets/img/pae.jpg" style='width:100%' class="video-play-btn2" data-toggle="modal" data-src="https://www.youtube.com/embed/vVmI_hrz0jw?autoplay=1" data-target="#myModal2">
                 </div>
          </div>
-         <div class="col-sm align-self-center">
-                <a  class="video-play-btn" width=95% data-toggle="modal" data-src="assets/img/VIDEO-2023-08-13-10-04-37.mp4" data-target="#myModal"><h4>Paraflow: A Computational Design Tool for Support-free Multimaterial 3D Printing</h4></a>
-                <p class="word-wrap">SIGCHI 2023</p>
+         <div class="col-sm align-self-center left-border">
+                <a  class="video-play-btn2" width=95% data-toggle="modal" data-src="https://www.youtube.com/embed/vVmI_hrz0jw?autoplay=1" data-target="#myModal2"><h4>Printing Atom-Efficiently: Faster Fabrication of Farther Unsupported Overhangs</h4></a>
+                <p class="py-2 word-wrap">ACM SCF 2023</p>
                 
                 <!-- <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by Pixel perfect - Flaticon</a> -->
        </div>
+       <div class="col-sm-3">
+        <div class="hover_img">
+               <img src="assets/img/paraflow.png" style='width:100%' class="video-play-btn" data-toggle="modal" data-src="assets/img/VIDEO-2023-08-13-10-04-37.mp4" data-target="#myModal">
+        </div>
+ </div>
+ <div class="col-sm align-self-center">
+        <a  class="video-play-btn" width=95% data-toggle="modal" data-src="assets/img/VIDEO-2023-08-13-10-04-37.mp4" data-target="#myModal"><h4>Paraflow: A Computational Design Tool for Support-free Multimaterial 3D Printing</h4></a>
+        <p class="word-wrap">SIGCHI 2023</p>
+        
+        <!-- <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by Pixel perfect - Flaticon</a> -->
+</div>
        </div>
         <h4 class="pb-1 mb-3">Publications</h4>
         <h5 class="fw-light">Computational Design</h5>
@@ -194,4 +220,20 @@
         </div>
       </div>
       </div>
-      </div></div></div>
+      </div></div>
+      <div class="modal fade" id="myModal2">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-body">
+        <!-- <button type="button" class="close" data-dismiss="modal">
+        <span aria-hidden="true">&times;</span></button> -->
+        <div class="row mb-1" id="closing" style="height:40px; overflow:hidden"><div type="col-8"></div><div type="col-4 text-right"><img style="height:50%; float: right;" src="assets/img/close.svg" type="button" class="close" data-dismiss="modal2"></div></div>
+        <!-- <img src="assets/img/reject.png"> -->
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe id="video2" width="640" height="360" src="" title="Futuristic HUD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        </div>
+      </div>
+      </div>
+      </div></div>
+</div>

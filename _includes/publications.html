@@ -97,36 +97,84 @@
         {% else %}
         <!-- Projects page -->
         <h3 class="fw-bold border-bottom pb-1 mb-3">Research</h3>
-        <h5 class="pb-1">Highlighted Media</h5>
-        <div class="row g-5 mb-5 justify-content-md-left align-self-center">
-              <!-- <div class="col-md-auto">
-                <img src="{{ site.github.url }}/assets/img/cover.jpg" width="30%">
-              </div>mt-3
-              <div class="col-md-auto"><h4>Injection continuous liquid interface production of 3D objects</h4></div> -->
-              <div class="col-sm-3">
-                <div class="hover_img">
-                       <img src="assets/img/pae.jpg" style='width:100%' class="video-play-btn2" data-toggle="modal" data-src="https://www.youtube.com/embed/vVmI_hrz0jw?autoplay=1" data-target="#myModal2">
-                </div>
-         </div>
-         <div class="col-sm align-self-center left-border">
-                <a  class="video-play-btn2" width=95% data-toggle="modal" data-src="https://www.youtube.com/embed/vVmI_hrz0jw?autoplay=1" data-target="#myModal2"><h4>Printing Atom-Efficiently: Faster Fabrication of Farther Unsupported Overhangs</h4></a>
-                <p class="py-2 word-wrap">ACM SCF 2023</p>
-                
-                <!-- <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by Pixel perfect - Flaticon</a> -->
+        <h4 class="pb-1">Highlighted Media</h4>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-indicators">
+    <button class="button active" data-target="#carouselExampleIndicators" data-bs-target="#carouselExampleIndicators" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-target="#carouselExampleIndicators"  data-bs-target="#carouselExampleIndicators" data-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-target="#carouselExampleIndicators"  data-bs-target="#carouselExampleIndicators" data-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                                <div class="row justify-content-md-left align-self-center">
+                                        <!-- <div class="col-md-auto">
+                                          <img src="{{ site.github.url }}/assets/img/cover.jpg" width="30%">
+                                        </div>mt-3
+                                        <div class="col-md-auto"><h4>Injection continuous liquid interface production of 3D objects</h4></div> -->
+                                        <div class="col-sm-5">
+                                          <div class="hover_img">
+                                                 <img class='teas' src="assets/img/par.png" style='width:100%' class="video-play-btn2" data-toggle="modal" data-src="https://www.youtube.com/embed/OIJUN1FO0RI?autoplay=1" data-target="#myModal2">
+                                          </div>
+                                   </div>
+                                   <div class="col-sm align-self-center left-border">
+                                          <a  class="video-play-btn2" width=95% data-toggle="modal" data-src="https://www.youtube.com/embed/OIJUN1FO0RI?autoplay=1" data-target="#myModal2"><h4>Palette PrintAR: An augmented reality design tool for multicolor resin 3D printing</h4></a>
+                                          <p class="py-2 word-wrap">ACM UIST 2023</p>
+                                          
+                                          <!-- <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by Pixel perfect - Flaticon</a> -->
+                                 </div>
+                                 </div>
+                          </div>
+                          <div class="carousel-item">
+                                <div class="row justify-content-md-left align-self-center">
+                                        <!-- <div class="col-md-auto">
+                                          <img src="{{ site.github.url }}/assets/img/cover.jpg" width="30%">
+                                        </div>mt-3
+                                        <div class="col-md-auto"><h4>Injection continuous liquid interface production of 3D objects</h4></div> -->
+                                        <div class="col-sm-5">
+                                          <div class="hover_img">
+                                                 <img class='teas' src="assets/img/pae.jpg" style='width:100%' class="video-play-btn2" data-toggle="modal" data-src="https://www.youtube.com/embed/vVmI_hrz0jw?autoplay=1" data-target="#myModal2">
+                                          </div>
+                                   </div>
+                                   <div class="col-sm align-self-center left-border">
+                                          <a  class="video-play-btn2" width=95% data-toggle="modal" data-src="https://www.youtube.com/embed/vVmI_hrz0jw?autoplay=1" data-target="#myModal2"><h4>Printing Atom-Efficiently: Faster Fabrication of Farther Unsupported Overhangs</h4></a>
+                                          <p class="py-2 word-wrap">ACM SCF 2023</p>
+                                          
+                                          <!-- <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by Pixel perfect - Flaticon</a> -->
+                                 </div>
+                                 </div>
+                          </div>
+                          <div class="carousel-item">
+                                <div class="row justify-content-md-left align-self-center">
+                                        <!-- <div class="col-md-auto">
+                                          <img src="{{ site.github.url }}/assets/img/cover.jpg" width="30%">
+                                        </div>mt-3
+                                        <div class="col-md-auto"><h4>Injection continuous liquid interface production of 3D objects</h4></div> -->
+                                        <div class="col-sm-5">
+                                                <div class="hover_img">
+                                                       <img class='teas' src="assets/img/paraflow.png" style='width:100%' class="video-play-btn" data-toggle="modal" data-src="assets/img/VIDEO-2023-08-13-10-04-37.mp4" data-target="#myModal">
+                                                </div>
+                                         </div>
+                                         <div class="col-sm align-self-center">
+                                                <a  class="video-play-btn" width=95% data-toggle="modal" data-src="assets/img/VIDEO-2023-08-13-10-04-37.mp4" data-target="#myModal"><h4>Paraflow: A Computational Design Tool for Support-free Multimaterial 3D Printing</h4></a>
+                                                <p class="word-wrap">SIGCHI 2023</p>
+                                                
+                                                <!-- <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by Pixel perfect - Flaticon</a> -->
+                                        </div>
+                                 </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
        </div>
-       <div class="col-sm-3">
-        <div class="hover_img">
-               <img src="assets/img/paraflow.png" style='width:100%' class="video-play-btn" data-toggle="modal" data-src="assets/img/VIDEO-2023-08-13-10-04-37.mp4" data-target="#myModal">
-        </div>
- </div>
- <div class="col-sm align-self-center">
-        <a  class="video-play-btn" width=95% data-toggle="modal" data-src="assets/img/VIDEO-2023-08-13-10-04-37.mp4" data-target="#myModal"><h4>Paraflow: A Computational Design Tool for Support-free Multimaterial 3D Printing</h4></a>
-        <p class="word-wrap">SIGCHI 2023</p>
-        
-        <!-- <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by Pixel perfect - Flaticon</a> -->
-</div>
-       </div>
-        <h4 class="pb-1 mb-3">Publications</h4>
+        <h4 class="pb-1 pt-4 mt-2 mb-3">Publications</h4>
         <h5 class="fw-light">Computational Design</h5>
         <!-- Gabriel Lipkowitz, Tim Samuelsen, Kaiwen Hsiao, Maria T. Dulay, Ian Coates, William Pan, Eric S.G. Shaqfeh, Joseph M. DeSimone -->
         <p><b>Lipkowitz, G.</b>, and DeSimone, J. M. (2023). <a href="https://dl.acm.org/doi/10.1145/3586182.3616684">"Palette-PrintAR: augmented reality fluidic design for multicolor resin 3D printing"</a> Under revision at 2024 CHI Conference on Human Factors in Computing Systems.</p>

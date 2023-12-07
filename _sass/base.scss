@@ -131,3 +131,19 @@ body a {
 //   margin-right: 0  !important;
 //   height: 100%;
 // }
+
+.carousel-inner{
+  width: 80%;
+  margin: auto;
+  height: 200px !important;
+  margin-bottom:30px;
+}
+
+.carousel-control{
+  position: absolute;
+  left:0;
+}
+
+.carousel-indicators {
+  bottom:-50px;
+}

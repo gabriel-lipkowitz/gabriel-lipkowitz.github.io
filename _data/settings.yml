@@ -10,7 +10,7 @@ courses:
 # - {name: "Parametric Design and Optimization, CEE 220C (Stanford University, Spring 2022)", url:"/"}
 
 social:
-- {icon: "github", link: "https://github.com/gabriel-lipkowitz"}
+# - {icon: "github", link: "https://github.com/gabriel-lipkowitz"}
 - {icon: "twitter", link: "https://twitter.com/gabriellipkowi2"}
 
 contacts:

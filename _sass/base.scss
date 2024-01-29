@@ -147,3 +147,11 @@ body a {
 .carousel-indicators {
   bottom:-50px;
 }
+
+.carousel-left {
+  justify-content: start !important;
+}
+
+.carousel-right {
+  justify-content: end !important;
+}

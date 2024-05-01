@@ -9,7 +9,6 @@ on:
 jobs:
   code-eval:
     runs-on: self-hosted
-      timeout-minutes: 5
     steps:
       - name: Maxium Code Eval Action
         uses: maxium-ai/code-eval-action@master

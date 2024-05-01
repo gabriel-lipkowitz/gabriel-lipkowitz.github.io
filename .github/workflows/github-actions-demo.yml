@@ -8,7 +8,7 @@ on:
 
 jobs:
   code-eval:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Maxium Code Eval Action
         uses: maxium-ai/code-eval-action@master
